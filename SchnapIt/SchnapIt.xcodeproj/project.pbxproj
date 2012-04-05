@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD089828152D381B00A2B0ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD089827152D381B00A2B0ED /* UIKit.framework */; };
+		CD08982A152D381B00A2B0ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD089829152D381B00A2B0ED /* Foundation.framework */; };
+		CD08982C152D381B00A2B0ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD08982B152D381B00A2B0ED /* CoreGraphics.framework */; };
+		CD08982E152D381B00A2B0ED /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD08982D152D381B00A2B0ED /* CoreData.framework */; };
+		CD089834152D381B00A2B0ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD089832152D381B00A2B0ED /* InfoPlist.strings */; };
+		CD089836152D381B00A2B0ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD089835152D381B00A2B0ED /* main.m */; };
+		CD08983A152D381B00A2B0ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD089839152D381B00A2B0ED /* AppDelegate.m */; };
+		CD08983D152D381B00A2B0ED /* SchnapIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD08983B152D381B00A2B0ED /* SchnapIt.xcdatamodeld */; };
+		CD089845152D381B00A2B0ED /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD089844152D381B00A2B0ED /* SenTestingKit.framework */; };
+		CD089846152D381B00A2B0ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD089827152D381B00A2B0ED /* UIKit.framework */; };
+		CD089847152D381B00A2B0ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD089829152D381B00A2B0ED /* Foundation.framework */; };
+		CD089848152D381B00A2B0ED /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD08982D152D381B00A2B0ED /* CoreData.framework */; };
+		CD089850152D381B00A2B0ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD08984E152D381B00A2B0ED /* InfoPlist.strings */; };
+		CD089853152D381C00A2B0ED /* SchnapItTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD089852152D381C00A2B0ED /* SchnapItTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD089849152D381B00A2B0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD08981A152D381B00A2B0ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD089822152D381B00A2B0ED;
+			remoteInfo = SchnapIt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD089823152D381B00A2B0ED /* SchnapIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchnapIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD089827152D381B00A2B0ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD089829152D381B00A2B0ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD08982B152D381B00A2B0ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CD08982D152D381B00A2B0ED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CD089831152D381B00A2B0ED /* SchnapIt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SchnapIt-Info.plist"; sourceTree = "<group>"; };
+		CD089833152D381B00A2B0ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD089835152D381B00A2B0ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD089837152D381B00A2B0ED /* SchnapIt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SchnapIt-Prefix.pch"; sourceTree = "<group>"; };
+		CD089838152D381B00A2B0ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD089839152D381B00A2B0ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD08983C152D381B00A2B0ED /* SchnapIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SchnapIt.xcdatamodel; sourceTree = "<group>"; };
+		CD089843152D381B00A2B0ED /* SchnapItTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchnapItTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD089844152D381B00A2B0ED /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CD08984D152D381B00A2B0ED /* SchnapItTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SchnapItTests-Info.plist"; sourceTree = "<group>"; };
+		CD08984F152D381B00A2B0ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD089851152D381C00A2B0ED /* SchnapItTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchnapItTests.h; sourceTree = "<group>"; };
+		CD089852152D381C00A2B0ED /* SchnapItTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchnapItTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD089820152D381B00A2B0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD089828152D381B00A2B0ED /* UIKit.framework in Frameworks */,
+				CD08982A152D381B00A2B0ED /* Foundation.framework in Frameworks */,
+				CD08982C152D381B00A2B0ED /* CoreGraphics.framework in Frameworks */,
+				CD08982E152D381B00A2B0ED /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD08983F152D381B00A2B0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD089845152D381B00A2B0ED /* SenTestingKit.framework in Frameworks */,
+				CD089846152D381B00A2B0ED /* UIKit.framework in Frameworks */,
+				CD089847152D381B00A2B0ED /* Foundation.framework in Frameworks */,
+				CD089848152D381B00A2B0ED /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD089818152D381B00A2B0ED = {
+			isa = PBXGroup;
+			children = (
+				CD08982F152D381B00A2B0ED /* SchnapIt */,
+				CD08984B152D381B00A2B0ED /* SchnapItTests */,
+				CD089826152D381B00A2B0ED /* Frameworks */,
+				CD089824152D381B00A2B0ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD089824152D381B00A2B0ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD089823152D381B00A2B0ED /* SchnapIt.app */,
+				CD089843152D381B00A2B0ED /* SchnapItTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD089826152D381B00A2B0ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD089827152D381B00A2B0ED /* UIKit.framework */,
+				CD089829152D381B00A2B0ED /* Foundation.framework */,
+				CD08982B152D381B00A2B0ED /* CoreGraphics.framework */,
+				CD08982D152D381B00A2B0ED /* CoreData.framework */,
+				CD089844152D381B00A2B0ED /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD08982F152D381B00A2B0ED /* SchnapIt */ = {
+			isa = PBXGroup;
+			children = (
+				CD089838152D381B00A2B0ED /* AppDelegate.h */,
+				CD089839152D381B00A2B0ED /* AppDelegate.m */,
+				CD08983B152D381B00A2B0ED /* SchnapIt.xcdatamodeld */,
+				CD089830152D381B00A2B0ED /* Supporting Files */,
+			);
+			path = SchnapIt;
+			sourceTree = "<group>";
+		};
+		CD089830152D381B00A2B0ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD089831152D381B00A2B0ED /* SchnapIt-Info.plist */,
+				CD089832152D381B00A2B0ED /* InfoPlist.strings */,
+				CD089835152D381B00A2B0ED /* main.m */,
+				CD089837152D381B00A2B0ED /* SchnapIt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD08984B152D381B00A2B0ED /* SchnapItTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD089851152D381C00A2B0ED /* SchnapItTests.h */,
+				CD089852152D381C00A2B0ED /* SchnapItTests.m */,
+				CD08984C152D381B00A2B0ED /* Supporting Files */,
+			);
+			path = SchnapItTests;
+			sourceTree = "<group>";
+		};
+		CD08984C152D381B00A2B0ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD08984D152D381B00A2B0ED /* SchnapItTests-Info.plist */,
+				CD08984E152D381B00A2B0ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD089822152D381B00A2B0ED /* SchnapIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD089856152D381C00A2B0ED /* Build configuration list for PBXNativeTarget "SchnapIt" */;
+			buildPhases = (
+				CD08981F152D381B00A2B0ED /* Sources */,
+				CD089820152D381B00A2B0ED /* Frameworks */,
+				CD089821152D381B00A2B0ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SchnapIt;
+			productName = SchnapIt;
+			productReference = CD089823152D381B00A2B0ED /* SchnapIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD089842152D381B00A2B0ED /* SchnapItTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD089859152D381C00A2B0ED /* Build configuration list for PBXNativeTarget "SchnapItTests" */;
+			buildPhases = (
+				CD08983E152D381B00A2B0ED /* Sources */,
+				CD08983F152D381B00A2B0ED /* Frameworks */,
+				CD089840152D381B00A2B0ED /* Resources */,
+				CD089841152D381B00A2B0ED /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD08984A152D381B00A2B0ED /* PBXTargetDependency */,
+			);
+			name = SchnapItTests;
+			productName = SchnapItTests;
+			productReference = CD089843152D381B00A2B0ED /* SchnapItTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD08981A152D381B00A2B0ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = CD08981D152D381B00A2B0ED /* Build configuration list for PBXProject "SchnapIt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD089818152D381B00A2B0ED;
+			productRefGroup = CD089824152D381B00A2B0ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD089822152D381B00A2B0ED /* SchnapIt */,
+				CD089842152D381B00A2B0ED /* SchnapItTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD089821152D381B00A2B0ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD089834152D381B00A2B0ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD089840152D381B00A2B0ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD089850152D381B00A2B0ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD089841152D381B00A2B0ED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD08981F152D381B00A2B0ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD089836152D381B00A2B0ED /* main.m in Sources */,
+				CD08983A152D381B00A2B0ED /* AppDelegate.m in Sources */,
+				CD08983D152D381B00A2B0ED /* SchnapIt.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD08983E152D381B00A2B0ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD089853152D381C00A2B0ED /* SchnapItTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD08984A152D381B00A2B0ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD089822152D381B00A2B0ED /* SchnapIt */;
+			targetProxy = CD089849152D381B00A2B0ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD089832152D381B00A2B0ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD089833152D381B00A2B0ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD08984E152D381B00A2B0ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD08984F152D381B00A2B0ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD089854152D381C00A2B0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD089855152D381C00A2B0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD089857152D381C00A2B0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SchnapIt/SchnapIt-Prefix.pch";
+				INFOPLIST_FILE = "SchnapIt/SchnapIt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD089858152D381C00A2B0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SchnapIt/SchnapIt-Prefix.pch";
+				INFOPLIST_FILE = "SchnapIt/SchnapIt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CD08985A152D381C00A2B0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SchnapIt.app/SchnapIt";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SchnapIt/SchnapIt-Prefix.pch";
+				INFOPLIST_FILE = "SchnapItTests/SchnapItTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CD08985B152D381C00A2B0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SchnapIt.app/SchnapIt";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SchnapIt/SchnapIt-Prefix.pch";
+				INFOPLIST_FILE = "SchnapItTests/SchnapItTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD08981D152D381B00A2B0ED /* Build configuration list for PBXProject "SchnapIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD089854152D381C00A2B0ED /* Debug */,
+				CD089855152D381C00A2B0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD089856152D381C00A2B0ED /* Build configuration list for PBXNativeTarget "SchnapIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD089857152D381C00A2B0ED /* Debug */,
+				CD089858152D381C00A2B0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD089859152D381C00A2B0ED /* Build configuration list for PBXNativeTarget "SchnapItTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD08985A152D381C00A2B0ED /* Debug */,
+				CD08985B152D381C00A2B0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD08983B152D381B00A2B0ED /* SchnapIt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD08983C152D381B00A2B0ED /* SchnapIt.xcdatamodel */,
+			);
+			currentVersion = CD08983C152D381B00A2B0ED /* SchnapIt.xcdatamodel */;
+			path = SchnapIt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD08981A152D381B00A2B0ED /* Project object */;
+}
