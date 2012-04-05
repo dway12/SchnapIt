@@ -21,6 +21,10 @@
 		CD089848152D381B00A2B0ED /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD08982D152D381B00A2B0ED /* CoreData.framework */; };
 		CD089850152D381B00A2B0ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD08984E152D381B00A2B0ED /* InfoPlist.strings */; };
 		CD089853152D381C00A2B0ED /* SchnapItTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD089852152D381C00A2B0ED /* SchnapItTests.m */; };
+		CD08985F152D541A00A2B0ED /* CaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD08985E152D541A00A2B0ED /* CaptureSessionManager.m */; };
+		CD089861152D545F00A2B0ED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD089860152D545F00A2B0ED /* AVFoundation.framework */; };
+		CD089867152D554000A2B0ED /* SchnapItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD089865152D554000A2B0ED /* SchnapItViewController.m */; };
+		CD089868152D554000A2B0ED /* SchnapItViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD089866152D554000A2B0ED /* SchnapItViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,12 @@
 		CD08984F152D381B00A2B0ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD089851152D381C00A2B0ED /* SchnapItTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchnapItTests.h; sourceTree = "<group>"; };
 		CD089852152D381C00A2B0ED /* SchnapItTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchnapItTests.m; sourceTree = "<group>"; };
+		CD08985D152D541A00A2B0ED /* CaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSessionManager.h; sourceTree = "<group>"; };
+		CD08985E152D541A00A2B0ED /* CaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureSessionManager.m; sourceTree = "<group>"; };
+		CD089860152D545F00A2B0ED /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CD089864152D554000A2B0ED /* SchnapItViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchnapItViewController.h; sourceTree = "<group>"; };
+		CD089865152D554000A2B0ED /* SchnapItViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchnapItViewController.m; sourceTree = "<group>"; };
+		CD089866152D554000A2B0ED /* SchnapItViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchnapItViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD089861152D545F00A2B0ED /* AVFoundation.framework in Frameworks */,
 				CD089828152D381B00A2B0ED /* UIKit.framework in Frameworks */,
 				CD08982A152D381B00A2B0ED /* Foundation.framework in Frameworks */,
 				CD08982C152D381B00A2B0ED /* CoreGraphics.framework in Frameworks */,
@@ -102,6 +113,7 @@
 		CD089826152D381B00A2B0ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD089860152D545F00A2B0ED /* AVFoundation.framework */,
 				CD089827152D381B00A2B0ED /* UIKit.framework */,
 				CD089829152D381B00A2B0ED /* Foundation.framework */,
 				CD08982B152D381B00A2B0ED /* CoreGraphics.framework */,
@@ -116,7 +128,11 @@
 			children = (
 				CD089838152D381B00A2B0ED /* AppDelegate.h */,
 				CD089839152D381B00A2B0ED /* AppDelegate.m */,
+				CD08985D152D541A00A2B0ED /* CaptureSessionManager.h */,
+				CD08985E152D541A00A2B0ED /* CaptureSessionManager.m */,
 				CD08983B152D381B00A2B0ED /* SchnapIt.xcdatamodeld */,
+				CD089862152D54AA00A2B0ED /* ViewControllers */,
+				CD089863152D54BD00A2B0ED /* Displays */,
 				CD089830152D381B00A2B0ED /* Supporting Files */,
 			);
 			path = SchnapIt;
@@ -150,6 +166,23 @@
 				CD08984E152D381B00A2B0ED /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD089862152D54AA00A2B0ED /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD089864152D554000A2B0ED /* SchnapItViewController.h */,
+				CD089865152D554000A2B0ED /* SchnapItViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CD089863152D54BD00A2B0ED /* Displays */ = {
+			isa = PBXGroup;
+			children = (
+				CD089866152D554000A2B0ED /* SchnapItViewController.xib */,
+			);
+			name = Displays;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD089834152D381B00A2B0ED /* InfoPlist.strings in Resources */,
+				CD089868152D554000A2B0ED /* SchnapItViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +294,8 @@
 				CD089836152D381B00A2B0ED /* main.m in Sources */,
 				CD08983A152D381B00A2B0ED /* AppDelegate.m in Sources */,
 				CD08983D152D381B00A2B0ED /* SchnapIt.xcdatamodeld in Sources */,
+				CD08985F152D541A00A2B0ED /* CaptureSessionManager.m in Sources */,
+				CD089867152D554000A2B0ED /* SchnapItViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +342,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -332,7 +368,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

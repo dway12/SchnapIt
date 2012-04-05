@@ -11,17 +11,39 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize navigationController = _navigationController;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    //self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor redColor];
+
+    application.statusBarStyle = UIStatusBarStyleBlackOpaque;
+    [self.window addSubview:navigationController.view];
+    self.window.rootViewController = self.navigationController;
+    
     [self.window makeKeyAndVisible];
     return YES;
+}
++ (AppDelegate *)sharedAppDelegate
+{
+return (AppDelegate *) [UIApplication sharedApplication].delegate;
+}
+
+- (void)dealloc
+{
+    [self.window release];
+    [self.navigationController release];
+    [self.managedObjectContext release];
+    [self.managedObjectModel release];
+    [self.persistentStoreCoordinator release];    
+    
+    [super dealloc];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
