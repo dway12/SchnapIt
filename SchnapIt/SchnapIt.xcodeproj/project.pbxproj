@@ -25,6 +25,14 @@
 		CD089861152D545F00A2B0ED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD089860152D545F00A2B0ED /* AVFoundation.framework */; };
 		CD089867152D554000A2B0ED /* SchnapItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD089865152D554000A2B0ED /* SchnapItViewController.m */; };
 		CD089868152D554000A2B0ED /* SchnapItViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD089866152D554000A2B0ED /* SchnapItViewController.xib */; };
+		CDE09FD9152E921600657B1B /* TagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE09FD7152E921600657B1B /* TagViewController.m */; };
+		CDE09FDA152E921600657B1B /* TagViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE09FD8152E921600657B1B /* TagViewController.xib */; };
+		CDE09FDE152E923300657B1B /* TagView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE09FDD152E923200657B1B /* TagView.m */; };
+		CDE09FE1152E924400657B1B /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE09FE0152E924400657B1B /* Box.m */; };
+		CDE09FE9152E9CF000657B1B /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE09FE7152E9CEF00657B1B /* DetailsViewController.m */; };
+		CDE09FEA152E9CF000657B1B /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE09FE8152E9CEF00657B1B /* DetailsViewController.xib */; };
+		CDE09FEE152E9D5600657B1B /* ObjectsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE09FEC152E9D5600657B1B /* ObjectsListViewController.m */; };
+		CDE09FEF152E9D5600657B1B /* ObjectsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE09FED152E9D5600657B1B /* ObjectsListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +70,20 @@
 		CD089864152D554000A2B0ED /* SchnapItViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchnapItViewController.h; sourceTree = "<group>"; };
 		CD089865152D554000A2B0ED /* SchnapItViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchnapItViewController.m; sourceTree = "<group>"; };
 		CD089866152D554000A2B0ED /* SchnapItViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchnapItViewController.xib; sourceTree = "<group>"; };
+		CDE09FD6152E921600657B1B /* TagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagViewController.h; sourceTree = "<group>"; };
+		CDE09FD7152E921600657B1B /* TagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagViewController.m; sourceTree = "<group>"; };
+		CDE09FD8152E921600657B1B /* TagViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagViewController.xib; sourceTree = "<group>"; };
+		CDE09FDC152E923200657B1B /* TagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TagView.h; path = ../TagView.h; sourceTree = "<group>"; };
+		CDE09FDD152E923200657B1B /* TagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TagView.m; path = ../TagView.m; sourceTree = "<group>"; };
+		CDE09FDF152E924400657B1B /* Box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Box.h; path = ../Box.h; sourceTree = "<group>"; };
+		CDE09FE0152E924400657B1B /* Box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Box.m; path = ../Box.m; sourceTree = "<group>"; };
+		CDE09FE2152E96C100657B1B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CDE09FE6152E9CEF00657B1B /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsViewController.h; path = ../DetailsViewController.h; sourceTree = "<group>"; };
+		CDE09FE7152E9CEF00657B1B /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsViewController.m; path = ../DetailsViewController.m; sourceTree = "<group>"; };
+		CDE09FE8152E9CEF00657B1B /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailsViewController.xib; path = ../DetailsViewController.xib; sourceTree = "<group>"; };
+		CDE09FEB152E9D5600657B1B /* ObjectsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectsListViewController.h; sourceTree = "<group>"; };
+		CDE09FEC152E9D5600657B1B /* ObjectsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectsListViewController.m; sourceTree = "<group>"; };
+		CDE09FED152E9D5600657B1B /* ObjectsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjectsListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +152,11 @@
 				CD089839152D381B00A2B0ED /* AppDelegate.m */,
 				CD08985D152D541A00A2B0ED /* CaptureSessionManager.h */,
 				CD08985E152D541A00A2B0ED /* CaptureSessionManager.m */,
+				CDE09FDC152E923200657B1B /* TagView.h */,
+				CDE09FDD152E923200657B1B /* TagView.m */,
+				CDE09FDF152E924400657B1B /* Box.h */,
+				CDE09FE0152E924400657B1B /* Box.m */,
+				CDE09FE2152E96C100657B1B /* Constants.h */,
 				CD08983B152D381B00A2B0ED /* SchnapIt.xcdatamodeld */,
 				CD089862152D54AA00A2B0ED /* ViewControllers */,
 				CD089863152D54BD00A2B0ED /* Displays */,
@@ -173,6 +200,12 @@
 			children = (
 				CD089864152D554000A2B0ED /* SchnapItViewController.h */,
 				CD089865152D554000A2B0ED /* SchnapItViewController.m */,
+				CDE09FD6152E921600657B1B /* TagViewController.h */,
+				CDE09FD7152E921600657B1B /* TagViewController.m */,
+				CDE09FEB152E9D5600657B1B /* ObjectsListViewController.h */,
+				CDE09FEC152E9D5600657B1B /* ObjectsListViewController.m */,
+				CDE09FE6152E9CEF00657B1B /* DetailsViewController.h */,
+				CDE09FE7152E9CEF00657B1B /* DetailsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -181,6 +214,9 @@
 			isa = PBXGroup;
 			children = (
 				CD089866152D554000A2B0ED /* SchnapItViewController.xib */,
+				CDE09FE8152E9CEF00657B1B /* DetailsViewController.xib */,
+				CDE09FD8152E921600657B1B /* TagViewController.xib */,
+				CDE09FED152E9D5600657B1B /* ObjectsListViewController.xib */,
 			);
 			name = Displays;
 			sourceTree = "<group>";
@@ -257,6 +293,9 @@
 			files = (
 				CD089834152D381B00A2B0ED /* InfoPlist.strings in Resources */,
 				CD089868152D554000A2B0ED /* SchnapItViewController.xib in Resources */,
+				CDE09FDA152E921600657B1B /* TagViewController.xib in Resources */,
+				CDE09FEA152E9CF000657B1B /* DetailsViewController.xib in Resources */,
+				CDE09FEF152E9D5600657B1B /* ObjectsListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +335,11 @@
 				CD08983D152D381B00A2B0ED /* SchnapIt.xcdatamodeld in Sources */,
 				CD08985F152D541A00A2B0ED /* CaptureSessionManager.m in Sources */,
 				CD089867152D554000A2B0ED /* SchnapItViewController.m in Sources */,
+				CDE09FD9152E921600657B1B /* TagViewController.m in Sources */,
+				CDE09FDE152E923300657B1B /* TagView.m in Sources */,
+				CDE09FE1152E924400657B1B /* Box.m in Sources */,
+				CDE09FE9152E9CF000657B1B /* DetailsViewController.m in Sources */,
+				CDE09FEE152E9D5600657B1B /* ObjectsListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +503,7 @@
 				CD089858152D381C00A2B0ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD089859152D381C00A2B0ED /* Build configuration list for PBXNativeTarget "SchnapItTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +512,7 @@
 				CD08985B152D381C00A2B0ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
