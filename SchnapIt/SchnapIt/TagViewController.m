@@ -153,7 +153,6 @@
             if (CGRectContainsPoint(CGRectMake([currentBox upperLeft].x-LINEWIDTH, [currentBox upperLeft].y-LINEWIDTH, [currentBox lowerRight].x-[currentBox upperLeft].x+2*LINEWIDTH, [currentBox lowerRight].y-[currentBox upperLeft].y+2*LINEWIDTH) , location)) {
                 selectedBox = i;
                 [annotationView setSelectedBox:i];
-                NSLog(@"He tocado el rectangulo %d!",i);
                 break;
             }
             
@@ -205,7 +204,6 @@
          }*/
         
     }
-    NSLog(@"Es la esquina: %d",corner);
     firstLocation=location;
     [annotationView setNeedsDisplay];
 }
@@ -278,27 +276,8 @@
     [self.navigationController pushViewController:self.objectsListViewController animated:YES];
     
 }
--(IBAction)labelAction:(id)sender{
-    /*Box *box = [dictionaryBox objectForKey:[NSString stringWithFormat:@"%d",[annotationView SelectedBox]]];
-     label.text=box.label;*/
-    keyboardVisible=YES;
-    if ([annotationView SelectedBox]==-1){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Box not selected"
-                                                        message:@"Please, select a box."
-                                                       delegate:nil 
-                                              cancelButtonTitle:@"OK" 
-                                              otherButtonTitles: nil];
-        [alert show];
-        [alert release];
-        
-    }
-    else{
-        //self.view.userInteractionEnabled=NO;
-    }
-    
-}
+
 -(IBAction)deleteAction:(id)sender{
-    NSLog(@"Borrar");
     int num=[dictionaryBox count];
     if((num<1)||([annotationView SelectedBox]==-1)){
         return;

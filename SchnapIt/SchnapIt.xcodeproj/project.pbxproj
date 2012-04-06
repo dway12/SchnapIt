@@ -25,6 +25,8 @@
 		CD089861152D545F00A2B0ED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD089860152D545F00A2B0ED /* AVFoundation.framework */; };
 		CD089867152D554000A2B0ED /* SchnapItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD089865152D554000A2B0ED /* SchnapItViewController.m */; };
 		CD089868152D554000A2B0ED /* SchnapItViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD089866152D554000A2B0ED /* SchnapItViewController.xib */; };
+		CD496155152F726E00724842 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD496153152F726E00724842 /* HelpViewController.m */; };
+		CD496156152F726E00724842 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD496154152F726E00724842 /* HelpViewController.xib */; };
 		CDE09FD9152E921600657B1B /* TagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE09FD7152E921600657B1B /* TagViewController.m */; };
 		CDE09FDA152E921600657B1B /* TagViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE09FD8152E921600657B1B /* TagViewController.xib */; };
 		CDE09FDE152E923300657B1B /* TagView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE09FDD152E923200657B1B /* TagView.m */; };
@@ -70,6 +72,9 @@
 		CD089864152D554000A2B0ED /* SchnapItViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchnapItViewController.h; sourceTree = "<group>"; };
 		CD089865152D554000A2B0ED /* SchnapItViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchnapItViewController.m; sourceTree = "<group>"; };
 		CD089866152D554000A2B0ED /* SchnapItViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchnapItViewController.xib; sourceTree = "<group>"; };
+		CD496152152F726E00724842 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		CD496153152F726E00724842 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		CD496154152F726E00724842 /* HelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
 		CDE09FD6152E921600657B1B /* TagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagViewController.h; sourceTree = "<group>"; };
 		CDE09FD7152E921600657B1B /* TagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagViewController.m; sourceTree = "<group>"; };
 		CDE09FD8152E921600657B1B /* TagViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagViewController.xib; sourceTree = "<group>"; };
@@ -206,6 +211,8 @@
 				CDE09FEC152E9D5600657B1B /* ObjectsListViewController.m */,
 				CDE09FE6152E9CEF00657B1B /* DetailsViewController.h */,
 				CDE09FE7152E9CEF00657B1B /* DetailsViewController.m */,
+				CD496152152F726E00724842 /* HelpViewController.h */,
+				CD496153152F726E00724842 /* HelpViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -217,6 +224,7 @@
 				CDE09FE8152E9CEF00657B1B /* DetailsViewController.xib */,
 				CDE09FD8152E921600657B1B /* TagViewController.xib */,
 				CDE09FED152E9D5600657B1B /* ObjectsListViewController.xib */,
+				CD496154152F726E00724842 /* HelpViewController.xib */,
 			);
 			name = Displays;
 			sourceTree = "<group>";
@@ -296,6 +304,7 @@
 				CDE09FDA152E921600657B1B /* TagViewController.xib in Resources */,
 				CDE09FEA152E9CF000657B1B /* DetailsViewController.xib in Resources */,
 				CDE09FEF152E9D5600657B1B /* ObjectsListViewController.xib in Resources */,
+				CD496156152F726E00724842 /* HelpViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +349,7 @@
 				CDE09FE1152E924400657B1B /* Box.m in Sources */,
 				CDE09FE9152E9CF000657B1B /* DetailsViewController.m in Sources */,
 				CDE09FEE152E9D5600657B1B /* ObjectsListViewController.m in Sources */,
+				CD496155152F726E00724842 /* HelpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
