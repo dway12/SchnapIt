@@ -17,7 +17,7 @@
     self = [super init];
     if (self) {
         // Initialization code here.
-        upperLeft = CGPointMake(0, 0 );
+        upperLeft = CGPointMake(50, 50 );
         lowerRigth = CGPointMake(150, 150);
         label= [NSString stringWithFormat:@""];
     }
