@@ -27,6 +27,7 @@
 		CD089868152D554000A2B0ED /* SchnapItViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD089866152D554000A2B0ED /* SchnapItViewController.xib */; };
 		CD496155152F726E00724842 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD496153152F726E00724842 /* HelpViewController.m */; };
 		CD496156152F726E00724842 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD496154152F726E00724842 /* HelpViewController.xib */; };
+		CD89C3481534BC2D00315D5B /* MIT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD89C3471534BC2D00315D5B /* MIT.jpg */; };
 		CDE09FD9152E921600657B1B /* TagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE09FD7152E921600657B1B /* TagViewController.m */; };
 		CDE09FDA152E921600657B1B /* TagViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE09FD8152E921600657B1B /* TagViewController.xib */; };
 		CDE09FDE152E923300657B1B /* TagView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE09FDD152E923200657B1B /* TagView.m */; };
@@ -75,6 +76,7 @@
 		CD496152152F726E00724842 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		CD496153152F726E00724842 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		CD496154152F726E00724842 /* HelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		CD89C3471534BC2D00315D5B /* MIT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = MIT.jpg; path = ../../../../../Downloads/MIT.jpg; sourceTree = "<group>"; };
 		CDE09FD6152E921600657B1B /* TagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagViewController.h; sourceTree = "<group>"; };
 		CDE09FD7152E921600657B1B /* TagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagViewController.m; sourceTree = "<group>"; };
 		CDE09FD8152E921600657B1B /* TagViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagViewController.xib; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				CD089832152D381B00A2B0ED /* InfoPlist.strings */,
 				CD089835152D381B00A2B0ED /* main.m */,
 				CD089837152D381B00A2B0ED /* SchnapIt-Prefix.pch */,
+				CD89C3471534BC2D00315D5B /* MIT.jpg */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				CDE09FEA152E9CF000657B1B /* DetailsViewController.xib in Resources */,
 				CDE09FEF152E9D5600657B1B /* ObjectsListViewController.xib in Resources */,
 				CD496156152F726E00724842 /* HelpViewController.xib in Resources */,
+				CD89C3481534BC2D00315D5B /* MIT.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
