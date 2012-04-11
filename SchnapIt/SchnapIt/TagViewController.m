@@ -69,7 +69,8 @@
     [self.view addSubview:self.bottomToolbar];
     
    // NSLog(@"highasoi");
-    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:self.doneButton, self.deleteButton,nil];
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:self.doneButton, 
+                                               nil];
     
     // Do any additional setup after loading the view from its nib.
     [super viewDidLoad];
