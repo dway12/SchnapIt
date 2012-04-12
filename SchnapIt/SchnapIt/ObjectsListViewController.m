@@ -37,7 +37,8 @@
 
 - (void)viewDidLoad
 {
-    self.title = @"Schnaps";
+
+    self.title = @"Your Products";
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -85,8 +86,15 @@
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:15];
     cell.textLabel.text = [p name];
     cell.imageView.image = [p image];
-    
     return cell;
+}
+
+- (void)tableView: (UITableView *)tableView 
+didSelectRowAtIndexPath: (NSIndexPath *)indexPath 
+{
+    Product *p = [products objectAtIndex:indexPath.row];
+    NSLog(@"selected on %@", [p name]);
+
 }
 
 @end
