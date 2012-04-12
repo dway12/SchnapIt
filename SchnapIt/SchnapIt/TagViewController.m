@@ -32,8 +32,10 @@
         [box release];
      
         //  make the done button b/c the top navigation bar is not represented in the xib
-        SEL doneAction = @selector(doneAction:);
-        self.doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Look Up" style:UIBarButtonSystemItemDone target:self action:doneAction];
+        self.doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Look Up" 
+                                                           style:UIBarButtonSystemItemDone 
+                                                          target:self 
+                                                          action:@selector(doneAction:)];
         
         //  annotationView = [[TagView alloc] initWithFrame:CGRectMake(0, 45, 320, 385)];
         
@@ -76,7 +78,6 @@
    // NSLog(@"highasoi");
     self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:self.doneButton, 
                                                nil];
-    
     // Do any additional setup after loading the view from its nib.
     [super viewDidLoad];
 
@@ -278,6 +279,7 @@
     
 }
 -(IBAction)doneAction:(id)sender{
+    
     
     [self.navigationController pushViewController:self.objectsListViewController animated:YES];
     

@@ -10,6 +10,7 @@
 #import "TagView.h"
 #import "Box.h"
 #import "ObjectsListViewController.h"
+#import "Product.h"
 
 @interface TagViewController : UIViewController{
     

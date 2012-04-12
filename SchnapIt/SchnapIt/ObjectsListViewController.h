@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Product.h"
 
 @interface ObjectsListViewController : UIViewController
+
+
+- (void) addProduct:(Product *)product;
+
 
 @end

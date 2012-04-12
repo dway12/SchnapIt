@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94C444FD1536C3A400CCEEC3 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C444FC1536C3A400CCEEC3 /* Product.m */; };
+		94C445021536C48900CCEEC3 /* lenovo_laptop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94C445001536C48900CCEEC3 /* lenovo_laptop.jpg */; };
+		94C445031536C48900CCEEC3 /* macbook_laptop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94C445011536C48900CCEEC3 /* macbook_laptop.jpg */; };
 		CD089828152D381B00A2B0ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD089827152D381B00A2B0ED /* UIKit.framework */; };
 		CD08982A152D381B00A2B0ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD089829152D381B00A2B0ED /* Foundation.framework */; };
 		CD08982C152D381B00A2B0ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD08982B152D381B00A2B0ED /* CoreGraphics.framework */; };
@@ -49,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94C444FB1536C3A400CCEEC3 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		94C444FC1536C3A400CCEEC3 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		94C445001536C48900CCEEC3 /* lenovo_laptop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lenovo_laptop.jpg; sourceTree = "<group>"; };
+		94C445011536C48900CCEEC3 /* macbook_laptop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = macbook_laptop.jpg; sourceTree = "<group>"; };
 		CD089823152D381B00A2B0ED /* SchnapIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchnapIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD089827152D381B00A2B0ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CD089829152D381B00A2B0ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,9 +127,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94C444FF1536C47700CCEEC3 /* Product Images */ = {
+			isa = PBXGroup;
+			children = (
+				94C445001536C48900CCEEC3 /* lenovo_laptop.jpg */,
+				94C445011536C48900CCEEC3 /* macbook_laptop.jpg */,
+			);
+			name = "Product Images";
+			sourceTree = "<group>";
+		};
 		CD089818152D381B00A2B0ED = {
 			isa = PBXGroup;
 			children = (
+				94C444FF1536C47700CCEEC3 /* Product Images */,
 				CD08982F152D381B00A2B0ED /* SchnapIt */,
 				CD08984B152D381B00A2B0ED /* SchnapItTests */,
 				CD089826152D381B00A2B0ED /* Frameworks */,
@@ -165,6 +182,8 @@
 				CDE09FE0152E924400657B1B /* Box.m */,
 				CDE09FE2152E96C100657B1B /* Constants.h */,
 				CD08983B152D381B00A2B0ED /* SchnapIt.xcdatamodeld */,
+				94C444FB1536C3A400CCEEC3 /* Product.h */,
+				94C444FC1536C3A400CCEEC3 /* Product.m */,
 				CD089862152D54AA00A2B0ED /* ViewControllers */,
 				CD089863152D54BD00A2B0ED /* Displays */,
 				CD089830152D381B00A2B0ED /* Supporting Files */,
@@ -309,6 +328,8 @@
 				CDE09FEF152E9D5600657B1B /* ObjectsListViewController.xib in Resources */,
 				CD496156152F726E00724842 /* HelpViewController.xib in Resources */,
 				CD89C34B1534BDE200315D5B /* MIT.jpg in Resources */,
+				94C445021536C48900CCEEC3 /* lenovo_laptop.jpg in Resources */,
+				94C445031536C48900CCEEC3 /* macbook_laptop.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +375,7 @@
 				CDE09FE9152E9CF000657B1B /* DetailsViewController.m in Sources */,
 				CDE09FEE152E9D5600657B1B /* ObjectsListViewController.m in Sources */,
 				CD496155152F726E00724842 /* HelpViewController.m in Sources */,
+				94C444FD1536C3A400CCEEC3 /* Product.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

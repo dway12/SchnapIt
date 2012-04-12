@@ -18,6 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        
         // Custom initialization
     }
     return self;
@@ -25,7 +26,7 @@
 
 - (void)viewDidLoad
 {
-    self.title = @"Review Things";
+    self.title = @"Schnaps";
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
