@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Product.h"
+#import "DetailsViewController.h"
 
 @interface ObjectsListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     IBOutlet UITableView* productsTable;
