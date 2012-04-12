@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "Product.h"
 
-@interface ObjectsListViewController : UIViewController
+@interface ObjectsListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    IBOutlet UITableView* productsTable;
+    NSMutableArray *products;
+}
 
+@property (nonatomic, retain) UITableView* productsTable;
 
-- (void) addProduct:(Product *)product;
-
+- (void) addProduct:(id)product;
 
 @end

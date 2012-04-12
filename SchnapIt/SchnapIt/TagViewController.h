@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "stdlib.h"
 #import "TagView.h"
 #import "Box.h"
 #import "ObjectsListViewController.h"

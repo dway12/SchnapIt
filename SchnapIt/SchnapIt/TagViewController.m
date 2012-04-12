@@ -279,7 +279,13 @@
     
 }
 -(IBAction)doneAction:(id)sender{
-    
+
+    // first box is always a Lenovo, second is always a Macbook, for now
+    for (int i=0; i<[dictionaryBox count]; i++) {
+        // TODO: add stupid classifier here
+        if (i==0)   [self.objectsListViewController addProduct:[Product getLenovoLaptop]];
+        else        [self.objectsListViewController addProduct:[Product getMacbookLaptop]];
+    }
     
     [self.navigationController pushViewController:self.objectsListViewController animated:YES];
     

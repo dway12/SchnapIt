@@ -38,11 +38,11 @@
                                    buyURL:@"http://www.apple.com" 
                                   summary:@"The newest Macbook yet --Apple Tautology Dept" 
                                    rating:5 
-                                    image:[UIImage imageNamed:@"macbook_laptop"]];
+                                    image:[UIImage imageNamed:@"macbook_laptop.jpg"]];
 }
 
 +(id) getLenovoLaptop {
-    return [[Product alloc] initWithTitle:@"Lenovo Laptop" 
+    return [[Product alloc] initWithTitle:@"Lenovo X200" 
                                    buyURL:@"http://www.lenovo.com" 
                                   summary:@"The same, classic looks you've come to expect from as far back as you can remember..." 
                                    rating:3 

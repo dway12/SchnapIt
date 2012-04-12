@@ -14,14 +14,25 @@
 
 @implementation ObjectsListViewController
 
+@synthesize productsTable;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
         // Custom initialization
+        products = [[NSMutableArray alloc] init];
     }
     return self;
+}
+
+- (void) addProduct:(id)product {
+    // add product to products if it isn't already contained in it.
+    NSString* pname = [product name];
+    for (int i=0;i<[products count]; i++) {
+        if ([pname isEqualToString:[[products objectAtIndex:i] name]]) return;
+    }
+    [products addObject:product];
 }
 
 - (void)viewDidLoad
@@ -41,6 +52,41 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma Table View Methods
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [products count];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.productsTable reloadData];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [products removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
+
+-(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellId = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+    }
+    Product *p = [products objectAtIndex:indexPath.row];
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:15];
+    cell.textLabel.text = [p name];
+    cell.imageView.image = [p image];
+    
+    return cell;
 }
 
 @end
