@@ -18,14 +18,31 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        
         // Custom initialization
     }
     return self;
 }
 
++(id) instance {
+    static DetailsViewController *inst = NULL;
+    @synchronized(self) {
+        if (inst == NULL) {
+            inst = [[self alloc] initWithNibName:nil bundle:nil];
+        }
+    }
+    return inst;
+}
+
+-(void) setProduct:(Product*) prod {
+    product = prod;
+    [self.view setNeedsLayout]; // possibly hackish way to tell it to refresh?
+    self.title = [prod name];
+}
+
 - (void)viewDidLoad
 {
-    self.title = @"Review Things";
+    self.title = @"Product Info";
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

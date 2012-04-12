@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Product.h"
 
-@interface DetailsViewController : UIViewController
+@interface DetailsViewController : UIViewController {
+    Product *product;
+}
 
++(id) instance;
+-(void) setProduct:(Product*) prod;
 
 @end

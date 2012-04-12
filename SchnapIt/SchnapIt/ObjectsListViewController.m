@@ -89,12 +89,16 @@
     return cell;
 }
 
-- (void)tableView: (UITableView *)tableView 
-didSelectRowAtIndexPath: (NSIndexPath *)indexPath 
-{
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    //DetailsViewController *dvController = [[DetailsViewController alloc] init];
+    
     Product *p = [products objectAtIndex:indexPath.row];
     NSLog(@"selected on %@", [p name]);
-
+    
+    DetailsViewController *dvController = [DetailsViewController instance];
+    [dvController setProduct:[products objectAtIndex:[indexPath row]]];
+    [self.navigationController pushViewController:dvController animated:YES];
 }
 
 @end
