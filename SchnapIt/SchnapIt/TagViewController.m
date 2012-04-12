@@ -30,12 +30,17 @@
         [dictionaryBox setObject:box forKey:[NSString stringWithFormat:@"%d",0]];
         numLabels=1;
         [box release];
+     
+        //  make the done button b/c the top navigation bar is not represented in the xib
+        SEL doneAction = @selector(doneAction:);
+        self.doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Look Up" style:UIBarButtonSystemItemDone target:self action:doneAction];
         
         //  annotationView = [[TagView alloc] initWithFrame:CGRectMake(0, 45, 320, 385)];
         
         
         // Custom initialization
     }
+    
     return self;
 }
 
