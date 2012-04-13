@@ -38,6 +38,10 @@
     product = prod;
     [self.view setNeedsLayout]; // possibly hackish way to tell it to refresh?
     self.title = [prod name];
+    [image setImage:[prod image]];
+    price.text = [NSString stringWithFormat:@"$%02f", [prod price]];
+    stars.text = [NSString stringWithFormat:@"%i stars", [prod rating]];
+    summary.text = [prod summary];
 }
 
 - (void)viewDidLoad
@@ -49,6 +53,16 @@
 
 - (void)viewDidUnload
 {
+    [image release];
+    image = nil;
+    [buybutton release];
+    buybutton = nil;
+    [price release];
+    price = nil;
+    [stars release];
+    stars = nil;
+    [summary release];
+    summary = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -59,4 +73,12 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)dealloc {
+    [image release];
+    [buybutton release];
+    [price release];
+    [stars release];
+    [summary release];
+    [super dealloc];
+}
 @end
