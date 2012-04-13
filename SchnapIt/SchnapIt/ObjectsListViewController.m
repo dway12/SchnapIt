@@ -38,7 +38,7 @@
 - (void)viewDidLoad
 {
 
-    self.title = @"Your Products";
+    self.title = @"Products";
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
