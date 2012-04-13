@@ -50,7 +50,7 @@
 
     
     
-    stars.text = [NSString stringWithFormat:@"%i stars", [prod rating]];
+    stars.text = [NSString stringWithFormat:@"%@", [prod getNaturalRating]];
     summary.text = [prod summary];
     
     [image.layer setBorderColor: [[UIColor grayColor] CGColor]];

@@ -86,7 +86,7 @@
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:15];
     cell.textLabel.text = [p name];
     cell.imageView.image = [p image];
-    NSString *detailLabel = [NSString stringWithFormat:@"   Price: $%.2f  Rating: %d/%d", [p price], [p rating], 5];
+    NSString *detailLabel = [NSString stringWithFormat:@"   Price: $%.2f  Rating: %@", [p price], [p getNaturalRating]];
     cell.detailTextLabel.text = detailLabel;
     
     return cell;

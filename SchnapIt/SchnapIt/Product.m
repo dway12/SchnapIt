@@ -37,6 +37,31 @@
     return self;
 }
 
+-(NSString*) getNaturalRating {
+    if (_rating == 0)
+    {
+        return @"Horrible";
+    }
+    else if (_rating == 1)
+    {
+        return @"Poor";
+    }
+    else if (_rating == 2)
+    {
+        return @"Adequate";
+    }
+    else if (_rating == 3)
+    {
+        return @"Good";
+    }
+    else if (_rating == 4)
+    {
+        return @"Great";
+    }
+    return @"Excellent";
+    
+}
+
 +(id) getMacbookLaptop {
     return [[Product alloc] initWithTitle:@"Macbook Pro" 
                                    buyURL:@"http://www.apple.com" 

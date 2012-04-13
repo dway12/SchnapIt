@@ -15,6 +15,7 @@
     int _rating;
     float _price;
     UIImage *_image;
+
 }
 
 @property (nonatomic, retain) NSString * name;
@@ -30,6 +31,8 @@
              rating:(int)rating 
               price:(float)price
               image:(UIImage *)image;
+
+-(NSString *) getNaturalRating;
 
 +(id) getMacbookLaptop;
 +(id) getLenovoLaptop;
