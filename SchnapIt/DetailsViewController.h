@@ -11,6 +11,7 @@
 
 @interface DetailsViewController : UIViewController {
     Product *product;
+
     IBOutlet UIImageView *image;
     IBOutlet UIButton *buybutton;
     IBOutlet UILabel *price;

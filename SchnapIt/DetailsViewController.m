@@ -69,6 +69,8 @@
     stars = nil;
     [summary release];
     summary = nil;
+    [image release];
+    image = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -85,6 +87,7 @@
     [price release];
     [stars release];
     [summary release];
+    [image release];
     [super dealloc];
 }
 @end
