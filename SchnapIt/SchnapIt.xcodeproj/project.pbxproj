@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		948008031537A97C0037B088 /* lenovo_laptop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 948008011537A97C0037B088 /* lenovo_laptop.jpg */; };
+		948008041537A97C0037B088 /* macbook_laptop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 948008021537A97C0037B088 /* macbook_laptop.jpg */; };
 		94C444FD1536C3A400CCEEC3 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C444FC1536C3A400CCEEC3 /* Product.m */; };
-		94C445021536C48900CCEEC3 /* lenovo_laptop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94C445001536C48900CCEEC3 /* lenovo_laptop.jpg */; };
-		94C445031536C48900CCEEC3 /* macbook_laptop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94C445011536C48900CCEEC3 /* macbook_laptop.jpg */; };
 		CD089828152D381B00A2B0ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD089827152D381B00A2B0ED /* UIKit.framework */; };
 		CD08982A152D381B00A2B0ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD089829152D381B00A2B0ED /* Foundation.framework */; };
 		CD08982C152D381B00A2B0ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD08982B152D381B00A2B0ED /* CoreGraphics.framework */; };
@@ -52,10 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		948008011537A97C0037B088 /* lenovo_laptop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lenovo_laptop.jpg; sourceTree = "<group>"; };
+		948008021537A97C0037B088 /* macbook_laptop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = macbook_laptop.jpg; sourceTree = "<group>"; };
 		94C444FB1536C3A400CCEEC3 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		94C444FC1536C3A400CCEEC3 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
-		94C445001536C48900CCEEC3 /* lenovo_laptop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lenovo_laptop.jpg; sourceTree = "<group>"; };
-		94C445011536C48900CCEEC3 /* macbook_laptop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = macbook_laptop.jpg; sourceTree = "<group>"; };
 		CD089823152D381B00A2B0ED /* SchnapIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchnapIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD089827152D381B00A2B0ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CD089829152D381B00A2B0ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -130,8 +130,8 @@
 		94C444FF1536C47700CCEEC3 /* Product Images */ = {
 			isa = PBXGroup;
 			children = (
-				94C445001536C48900CCEEC3 /* lenovo_laptop.jpg */,
-				94C445011536C48900CCEEC3 /* macbook_laptop.jpg */,
+				948008011537A97C0037B088 /* lenovo_laptop.jpg */,
+				948008021537A97C0037B088 /* macbook_laptop.jpg */,
 			);
 			name = "Product Images";
 			sourceTree = "<group>";
@@ -328,8 +328,8 @@
 				CDE09FEF152E9D5600657B1B /* ObjectsListViewController.xib in Resources */,
 				CD496156152F726E00724842 /* HelpViewController.xib in Resources */,
 				CD89C34B1534BDE200315D5B /* MIT.jpg in Resources */,
-				94C445021536C48900CCEEC3 /* lenovo_laptop.jpg in Resources */,
-				94C445031536C48900CCEEC3 /* macbook_laptop.jpg in Resources */,
+				948008031537A97C0037B088 /* lenovo_laptop.jpg in Resources */,
+				948008041537A97C0037B088 /* macbook_laptop.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -79,19 +79,19 @@
     static NSString *cellId = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
     }
     Product *p = [products objectAtIndex:indexPath.row];
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:15];
     cell.textLabel.text = [p name];
     cell.imageView.image = [p image];
+    NSString *detailLabel = [NSString stringWithFormat:@"   Price: $%.2f  Rating: %d/%d", [p price], [p rating], 5];
+    cell.detailTextLabel.text = detailLabel;
     
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //DetailsViewController *dvController = [[DetailsViewController alloc] init];
-    
     DetailsViewController *dvController = [DetailsViewController instance];
     [dvController setProduct:[products objectAtIndex:[indexPath row]]];
     [self.navigationController pushViewController:dvController animated:YES];

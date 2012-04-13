@@ -14,12 +14,15 @@
 @synthesize summary = _summary;
 @synthesize buyURL = _buyURL;
 @synthesize rating = _rating;
+@synthesize price = _price;
 @synthesize image = _image;
+
 
 -(id) initWithTitle:(NSString *)name 
                buyURL:(NSString *)buyURL 
               summary:(NSString *)summary 
-               rating:(int)rating 
+             rating:(int)rating 
+              price:(float)price
                 image:(UIImage *)image
 {
     self = [super init];
@@ -27,7 +30,8 @@
         self.name = name;
         self.buyURL = buyURL;
         self.summary = summary;
-        self.rating = rating%5;
+        self.rating = rating%6;
+        self.price = price;
         self.image = image;
     }
     return self;
@@ -38,6 +42,7 @@
                                    buyURL:@"http://www.apple.com" 
                                   summary:@"The newest Macbook yet --Apple Tautology Dept" 
                                    rating:5 
+                                    price:2199.00
                                     image:[UIImage imageNamed:@"macbook_laptop.jpg"]];
 }
 
@@ -46,6 +51,7 @@
                                    buyURL:@"http://www.lenovo.com" 
                                   summary:@"The same, classic looks you've come to expect from as far back as you can remember..." 
                                    rating:3 
+                                    price:1199.99
                                     image:[UIImage imageNamed:@"lenovo_laptop.jpg"]]; 
 }
 
