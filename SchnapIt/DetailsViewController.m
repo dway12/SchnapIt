@@ -40,7 +40,16 @@
     [self.view setNeedsLayout]; // possibly hackish way to tell it to refresh?
     self.title = [prod name];
     [image setImage:[prod image]];
-    price.text = [NSString stringWithFormat:@"$%.2f", [prod price]];
+    
+    
+    double currency = [prod price]; 
+    NSNumberFormatter *numberFormatter = [[[NSNumberFormatter alloc] init] autorelease];
+    [numberFormatter setNumberStyle: NSNumberFormatterCurrencyStyle];
+    NSString *numberAsString = [numberFormatter stringFromNumber:[NSNumber numberWithInt:currency]];
+    price.text = [NSString stringWithFormat:@"%@",numberAsString];
+
+    
+    
     stars.text = [NSString stringWithFormat:@"%i stars", [prod rating]];
     summary.text = [prod summary];
     
