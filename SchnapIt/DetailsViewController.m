@@ -39,7 +39,7 @@
     [self.view setNeedsLayout]; // possibly hackish way to tell it to refresh?
     self.title = [prod name];
     [image setImage:[prod image]];
-    price.text = [NSString stringWithFormat:@"$%02f", [prod price]];
+    price.text = [NSString stringWithFormat:@"$%.2f", [prod price]];
     stars.text = [NSString stringWithFormat:@"%i stars", [prod rating]];
     summary.text = [prod summary];
 }
@@ -47,8 +47,14 @@
 - (void)viewDidLoad
 {
     self.title = @"Product Info";
+    [buybutton addTarget:self action:@selector(doBuy:) forControlEvents:UIControlEventTouchUpInside];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void) doBuy:(id)sender
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: [product buyURL]]];
 }
 
 - (void)viewDidUnload
