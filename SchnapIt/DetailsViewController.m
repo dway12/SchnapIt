@@ -7,6 +7,7 @@
 //
 
 #import "DetailsViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface DetailsViewController ()
 
@@ -42,6 +43,15 @@
     price.text = [NSString stringWithFormat:@"$%.2f", [prod price]];
     stars.text = [NSString stringWithFormat:@"%i stars", [prod rating]];
     summary.text = [prod summary];
+    
+    [image.layer setBorderColor: [[UIColor darkGrayColor] CGColor]];
+    [image.layer setBorderWidth: 1.0];
+    [[image layer] setCornerRadius:15];
+ 
+    [[summary layer] setBorderColor:[[UIColor whiteColor] CGColor]];
+    [[summary layer] setBorderWidth:2.3];
+    [[summary layer] setCornerRadius:15];
+    [summary setClipsToBounds: YES];
 }
 
 - (void)viewDidLoad
