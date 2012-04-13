@@ -42,7 +42,7 @@ return (AppDelegate *) [UIApplication sharedApplication].delegate;
     [self.managedObjectContext release];
     [self.managedObjectModel release];
     [self.persistentStoreCoordinator release];    
-    
+
     [super dealloc];
 }
 

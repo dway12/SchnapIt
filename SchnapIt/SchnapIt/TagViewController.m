@@ -66,6 +66,8 @@
     //[annotationView setSelectedBox:0];
     selectedBox=0;
     
+    self.title = @"Tag It!";
+    
     [self.annotationView setBackgroundColor:[UIColor clearColor]];
     
     [self.view addSubview:self.annotationView];
