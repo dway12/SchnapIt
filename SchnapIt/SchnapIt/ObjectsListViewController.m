@@ -37,7 +37,8 @@
 
 - (void)viewDidLoad
 {
-    self.title = @"Schnaps";
+
+    self.title = @"Your Products";
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -90,6 +91,7 @@
     
     return cell;
 }
+
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     DetailsViewController *dvController = [DetailsViewController instance];
