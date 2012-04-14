@@ -13,6 +13,7 @@
 @interface ObjectsListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     IBOutlet UITableView* productsTable;
     NSMutableArray *products;
+    IBOutlet UIBarButtonItem *clearButton;
 }
 
 @property (nonatomic, retain) UITableView* productsTable;
