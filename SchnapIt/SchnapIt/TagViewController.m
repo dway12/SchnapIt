@@ -151,6 +151,7 @@
         else{
             selectedBox=-1;
             [annotationView setSelectedBox:-1];
+            self.deleteButton.enabled = false;
         }
     }
     
@@ -162,6 +163,7 @@
             if (CGRectContainsPoint(CGRectMake([currentBox upperLeft].x-LINEWIDTH, [currentBox upperLeft].y-LINEWIDTH, [currentBox lowerRight].x-[currentBox upperLeft].x+2*LINEWIDTH, [currentBox lowerRight].y-[currentBox upperLeft].y+2*LINEWIDTH) , location)) {
                 selectedBox = i;
                 [annotationView setSelectedBox:i];
+                self.deleteButton.enabled = true;
                 break;
             }
             
@@ -233,6 +235,7 @@
  }*/
 
 -(IBAction)addAction:(id)sender{
+
     Box *box = [[Box alloc]init];
     box.color=[colorArray objectAtIndex:(numLabels%9)];
     [dictionaryBox setObject:box forKey:[NSString stringWithFormat:@"%d",numLabels]];
@@ -240,6 +243,13 @@
     selectedBox=numLabels;
     numLabels++;
     [annotationView setNeedsDisplay];
+    if (numLabels>=2){
+        self.addButton.enabled = false;
+    }
+    if (numLabels>0){
+        self.deleteButton.enabled = true;
+        
+    }
     
     //NSLog(@"La cuenta es: %d",[dictionaryBox count]);
     
@@ -309,6 +319,14 @@
     selectedBox=-1;
     [annotationView setSelectedBox:-1];
     [annotationView setNeedsDisplay];
+    
+    if (numLabels<2){
+        self.addButton.enabled = true;
+    }
+    if (numLabels==0){
+        self.deleteButton.enabled = false;
+
+    }
     
 }
 -(void) dealloc{
